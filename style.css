@@ -1,0 +1,176 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway-Light.eot');
+	src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Raleway-Light.woff2') format('woff2'),
+			url('fonts/Raleway-Light.woff') format('woff'),
+			url('fonts/Raleway-Light.ttf') format('truetype'),
+			url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway-Medium.eot');
+	src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Raleway-Medium.woff2') format('woff2'),
+			url('fonts/Raleway-Medium.woff') format('woff'),
+			url('fonts/Raleway-Medium.ttf') format('truetype'),
+			url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-Regular.eot');
+	src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+			url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+			url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+			url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplaySC-Bold.eot');
+	src: url('fonts/PlayfairDisplaySC-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/PlayfairDisplaySC-Bold.woff2') format('woff2'),
+			url('fonts/PlayfairDisplaySC-Bold.woff') format('woff'),
+			url('fonts/PlayfairDisplaySC-Bold.ttf') format('truetype'),
+			url('fonts/PlayfairDisplaySC-Bold.svg#PlayfairDisplaySC-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-BoldItalic.eot');
+	src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+			url('fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+			url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+			url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+			url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-Italic.eot');
+	src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+			url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+			url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+			url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+			url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-BoldItalic.eot');
+	src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+			url('fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+			url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+			url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+			url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('fonts/PlayfairDisplay-Italic.eot');
+	src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+			url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+			url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+			url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+			url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+p {
+    font-size: 14;
+  }
+
+body {
+	width: 600px;
+}
+
+header {
+	font-family: "Raleway";
+}
+
+a {
+    color: #e2574c;
+}
+
+hr {
+	color: gray;
+}
+
+header img {
+	height: 50px;
+}
+
+.banner h2 {
+	font-family: "Raleway";
+}
+
+.cart {
+	float: right;
+}
+
+ul {
+	font-family: "Raleway";
+	display: flex;
+	justify-content: center;
+}
+
+li {
+	margin: 0 20px;
+}
+
+nav {
+	color: #e2574c;
+	display: block;
+	justify-content: center;
+	text-transform: uppercase;
+	margin: 15px;
+}
+
+.banner {
+    background: url("images/flower-bkgd.jpg");
+	text-align: center;
+	height: 400px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px;
+	}
+
+h3 {
+	font-family: "Playfair Display";
+}
+
+h2 {
+	font-family: "Playfair Display";
+}
+
+.contact {
+	display: flex;
+	justify-content: space-around;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
