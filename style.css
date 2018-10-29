@@ -98,13 +98,15 @@ p {
     font-size: 14;
   }
 
-body {
-	width: 600px;
-}
-
 header {
 	font-family: "Raleway";
 }
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+
 
 a {
     color: #e2574c;
@@ -122,9 +124,6 @@ header img {
 	font-family: "Raleway";
 }
 
-.cart {
-	float: right;
-}
 
 ul {
 	font-family: "Raleway";
@@ -154,7 +153,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	margin: 30px;
-	}
+}
 
 h3 {
 	font-family: "Playfair Display";
@@ -173,4 +172,32 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+}
+
+#featured {
+	display: none;
+}
+
+#logo {
+	padding: 20px;
+}
+
+
+@media screen and (max-width: 479px) {
+   
+    .desktop-only {
+       display: none;
+    }
+    
+    .withborder {
+        border-top: 10px #d7d7d7;
+    }
+
+/* This only applies on > 480px devices */
+
+@media screen and (min-width: 480px) {
+
+    .mobile-only {
+        display: none;
+    }
 }

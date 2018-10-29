@@ -9,20 +9,31 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
   <header class="container">
-    <div class="logo"></div><img src="images/aloha-logo.svg" alt="Aloha logo"></div>
-    <div class="cart"><a href="shopping_cart_link.html"><img class="cart" src="images/cart-icon.svg" alt="shopping cart icon"></a></div>
-    <br>
-    <hr>
-    <nav class="navbar">
+    <div class="top">
+      <div class="logo"><img src="images/aloha-logo.svg" alt="Aloha logo"></div>
+      <nav class="desktop-only">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#shop">Shop </a></li>
+          <li><a href="#featured">Featured </a></li>
+          <li><a href="#updates">Updates</a></li>
+        </ul>
+      </nav>
+      <div class="cart"><a href="shopping_cart_link.html"><img class="cart" src="images/cart-icon.svg" alt="shopping cart icon"></a></div>
+    </div>
+    
+    <nav class="mobile-only withborder">
       <ul>
-        <li>About</li>
-        <li>Shop </li>
-        <li>Featured </li>
-        <li>Updates</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop </a></li>
+        <li><a href="#featured">Featured </a></li>
+        <li><a href="#updates">Updates</a></li>
       </ul>
     </nav>
   </header>
@@ -31,9 +42,10 @@
     <h2>New Collection</h2>
     <h3>Spring/Summer 2016</h3>
   </div>
-  <div>
+  <div id="about">
     <h2>Hand-Crafted Styles</h2>
     <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+    <div id="shop">
     <ul>
       <li>Men's</li>
       <li>Trends</li>
@@ -42,8 +54,9 @@
       <li>Bags</li>
       <li>Women's</li>
     </ul>
+    </div>
   </div>
-  <div class="container">
+  <div id="featured" class="container">
     <h3>Most-Loved Products</h3>
     <ul>
       <li><img src="images/checked-stretch-dress.jpg" alt="a checked stretch dress"><br>Dresses<br>Checked Stretch Dress<br>$129.00</li>
@@ -53,14 +66,23 @@
     </ul>
   </div>
 
-  <div class="container">
-    <h2>Sign-up for Updates</h2>
+  <div id="updates">
+    <h2><em>Sign-up</em> for Updates</h2>
+    <p>Stay updated on our latest product releases, be first to find out more about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
   </div>
+
+  <div>
+    <form>
+      <input type="email" name="email" placeholder="Your Email" />
+      <button type="submit" id="submitbutton">Subscribe</button>
+    </form>
+  </div>
+
   <footer>
-    <div class="contact, container">
+    <div class="contact container">
       <p>© 2016 Aloha Apparel Co.<br>Powered by HTML and CSS.</p>
       <p>604-604-6040. info@alohaapparel.com</p>
-      <p>1490 W Broadway<br>Vancouver, BC, Canada</p>
+      <p>1490 W Broadway<br>Vancouver, BC, Canada</p> 
     </div>
 
     <div class="social, container">
@@ -71,7 +93,9 @@
       <p><a href="http://plus.google.com"><img src="google+_icon.png" alt="Google+ icon">Google+</a></p>
     </div>
   </footer>
-  <script src="js/jquery-3.3.1.min.js"></script>
+  
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/aloha.js"></script>
 </body>
 
