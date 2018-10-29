@@ -107,9 +107,18 @@ header {
 	justify-content: space-between;
 }
 
+.page-container {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+.page-container > div {
+	text-align: center;
+}
 
 a {
-    color: #e2574c;
+	color: #e2574c;
+	text-decoration: none;
 }
 
 hr {
@@ -120,19 +129,103 @@ header img {
 	height: 50px;
 }
 
+.banner {
+    background: url("images/flower-bkgd.jpg");
+	text-align: center;
+	height: 400px;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	color: white;
+	position: relative;
+}
+
+.banner > div {
+	z-index: 1;
+}
+
 .banner h2 {
 	font-family: "Raleway";
+	width: 100%;
 }
 
+.banner h3 {
+	font-size: 40px;
+}
 
-ul {
+.banner img {
+	height: 100%;
+	position: absolute;
+}
+
+#about {
+	min-height: 300px;
+}
+
+#about h2 {
+	margin: 40px 0 20px;
+}
+
+#about p {
+	margin: 0 auto;
+	max-width: 500px;
+	padding-bottom: 40px;
+	line-height: 1.5;
+}
+
+#shop ul {
 	font-family: "Raleway";
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 
-li {
-	margin: 0 20px;
+#shop li {
+	min-height: 300px;
+	min-width: 25%;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	background-size: cover;
+	color: white;
+	font-size: 35px;
+	text-shadow: black 0px 1px 1px;
+	box-sizing: border-box;
+	border: 3px solid;
+}
+
+#shop li:first-child, #shop li:last-child {
+	min-width: 50%;
+}
+
+
+#shop li:first-child {
+	background-image: url("images/mens-category.jpg");
+	border-left: 0;
+}
+
+#shop li:nth-child(2) {
+	background-image: url("images/trends-category.jpg");
+}
+
+#shop li:nth-child(3) {
+	background-image: url("images/glasses-category.jpg");
+	border-right: 0;
+}
+
+#shop li:nth-child(4) {
+	background-image: url("images/sale-category.jpg");
+	border-left: 0;
+}
+
+#shop li:nth-child(5) {
+	background-image: url("images/bags-category.jpg");
+}
+
+#shop li:last-child {
+	background-image: url("images/womens-category.jpg");
+	border-right: 0;
 }
 
 nav {
@@ -141,26 +234,33 @@ nav {
 	justify-content: center;
 	text-transform: uppercase;
 	margin: 15px;
+	width: 100%;
 }
 
-.banner {
-    background: url("images/flower-bkgd.jpg");
-	text-align: center;
-	height: 400px;
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+    margin: 0 auto;
 }
 
 footer {
 	display: flex;
 	justify-content: space-between;
-	margin: 30px;
+	background: #333333;
+	padding: 30px;
+	color: white;
+	margin-top: 6px;
 }
 
 h3 {
 	font-family: "Playfair Display";
+	text-shadow: black 0px 1px 1px;
 }
 
 h2 {
 	font-family: "Playfair Display";
+	text-shadow: black 0px 1px 1px;
 }
 
 .contact {
@@ -175,23 +275,51 @@ h2 {
 }
 
 #featured {
-	display: none;
+	margin: 70px 0 70px;
+}
+
+#featured ul {
+	display: flex;
+	justify-content: center;
 }
 
 #logo {
 	padding: 20px;
 }
 
+#updates {
+	height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	background-image: url("images/wave-bkgd.jpg");
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+}
+
+#updates h2 {
+	width: 100%;
+	font-size: 30px;
+}
+
+#updates p {
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px 0 20px;
+}
 
 @media screen and (max-width: 479px) {
    
     .desktop-only {
-       display: none;
+       display: block;
     }
     
     .withborder {
         border-top: 10px #d7d7d7;
-    }
+	}
+}
 
 /* This only applies on > 480px devices */
 

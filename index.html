@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
+    <div class="page-container">
   <header class="container">
     <div class="top">
       <div class="logo"><img src="images/aloha-logo.svg" alt="Aloha logo"></div>
@@ -39,8 +39,11 @@
   </header>
 
   <div class="banner container">
-    <h2>New Collection</h2>
-    <h3>Spring/Summer 2016</h3>
+    <div>
+      <h2>New Collection</h2>
+      <h3>Spring/Summer 2016</h3>
+    </div>
+    <img src="images/banner-girl.png" alt="banner model">
   </div>
   <div id="about">
     <h2>Hand-Crafted Styles</h2>
@@ -67,16 +70,16 @@
   </div>
 
   <div id="updates">
-    <h2><em>Sign-up</em> for Updates</h2>
+    <div>
+    <h2><i>Sign-up</i> for Updates</h2>
     <p>Stay updated on our latest product releases, be first to find out more about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-  </div>
-
-  <div>
-    <form>
+      <form>
       <input type="email" name="email" placeholder="Your Email" />
       <button type="submit" id="submitbutton">Subscribe</button>
     </form>
   </div>
+
+</div>
 
   <footer>
     <div class="contact container">
@@ -93,7 +96,7 @@
       <p><a href="http://plus.google.com"><img src="google+_icon.png" alt="Google+ icon">Google+</a></p>
     </div>
   </footer>
-  
+</div>
   <script src="js/jquery-3.3.1.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/aloha.js"></script>
