@@ -108,11 +108,11 @@ header {
 }
 
 .page-container {
-	width: 1240px;
+
 	margin: 0 auto;
 }
 
-.page-container > div {
+.page-container div {
 	text-align: center;
 }
 
@@ -176,12 +176,9 @@ header img {
 
 #shop ul {
 	font-family: "Raleway";
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
 }
 
-#shop li {
+/* #shop li {
 	min-height: 300px;
 	min-width: 25%;
 	display: flex;
@@ -193,37 +190,64 @@ header img {
 	text-shadow: black 0px 1px 1px;
 	box-sizing: border-box;
 	border: 3px solid;
-}
+} 
 
 #shop li:first-child, #shop li:last-child {
 	min-width: 50%;
 }
+*/
+.category-group__item {
+    height: 40vh;
+    background-position: center center;
+    min-height: 400px;
+	background-size: cover;
+	color: white;
+	font-size: 35px;
+	text-shadow: black 0px 1px 1px;
+	border: 3px solid;
+	box-sizing: border-box;
+}
+.category-group {
+	position: relative;
+	font-size: 0px;
+}
 
+.width-25 {
+	width: 25%;
+	display: inline-block;
+	font-size: 18px;
+}
 
-#shop li:first-child {
+.width-50 {
+	width: 50%;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.category-group__item.mens-category {
 	background-image: url("images/mens-category.jpg");
 	border-left: 0;
 }
 
-#shop li:nth-child(2) {
+.category-group__item.trends-category {
 	background-image: url("images/trends-category.jpg");
 }
 
-#shop li:nth-child(3) {
+.category-group__item.glasses-category {
 	background-image: url("images/glasses-category.jpg");
 	border-right: 0;
 }
 
-#shop li:nth-child(4) {
+.category-group__item.sale-category {
 	background-image: url("images/sale-category.jpg");
 	border-left: 0;
 }
 
-#shop li:nth-child(5) {
+.category-group__item.bags-category {
 	background-image: url("images/bags-category.jpg");
 }
 
-#shop li:last-child {
+.category-group__item.womens-category {
 	background-image: url("images/womens-category.jpg");
 	border-right: 0;
 }
@@ -319,13 +343,34 @@ h2 {
     .withborder {
         border-top: 10px #d7d7d7;
 	}
+	
 }
 
 /* This only applies on > 480px devices */
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
+
+	.category-group__item {
+		height: 200px;
+		min-height: 200px;
+	}
+
+	.width-sm-100 {
+		width: 100%
+	}
+
+	.width-sm-50 {
+		width: 50%
+	}
 
     .mobile-only {
         display: none;
     }
+}
+
+@media screen and (min-width: 1240px) {
+	
+	.page-container {
+		width: 100%;
+	}
 }

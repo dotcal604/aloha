@@ -50,12 +50,16 @@
     <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     <div id="shop">
     <ul>
-      <li>Men's</li>
-      <li>Trends</li>
-      <li>Glasses</li>
-      <li>Sale</li>
-      <li>Bags</li>
-      <li>Women's</li>
+      <div class="category-group">
+        <li class="category-group__item mens-category width-50 width-sm-100">Men's</li>
+        <li class="category-group__item trends-category width-25 width-sm-50">Trends</li>
+        <li class="category-group__item glasses-category width-25 width-sm-50">Glasses</li>
+      </div>
+      <div class="category-group">
+        <li class="category-group__item sale-category width-25 width-sm-50">Sale</li>
+        <li class="category-group__item bags-category width-25 width-sm-50">Bags</li>
+        <li class="category-group__item womens-category width-50 width-sm-100">Women's</li>
+      </div>
     </ul>
     </div>
   </div>
@@ -75,7 +79,7 @@
     <p>Stay updated on our latest product releases, be first to find out more about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
       <form>
       <input type="email" name="email" placeholder="Your Email" />
-      <button type="submit" id="submitbutton">Subscribe</button>
+      <button button type="submit" style="position: absolute;right: 0;margin-top: -34px;" type="submit" id="submitbutton">Subscribe</button>
     </form>
   </div>
 
