@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,8 +15,10 @@
 
 <body>
     <div class="page-container">
-  <header class="container">
-    <div class="top">
+ 
+
+ <header>
+    <div class="header-top container">
       <div class="logo"><img src="images/aloha-logo.svg" alt="Aloha logo"></div>
       <nav class="desktop-only">
         <ul>
@@ -28,7 +31,7 @@
       <div class="cart"><a href="shopping_cart_link.html"><img class="cart" src="images/cart-icon.svg" alt="shopping cart icon"></a></div>
     </div>
     
-    <nav class="mobile-only withborder">
+    <nav class="header-bottom mobile-only withborder container">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#shop">Shop </a></li>
@@ -40,66 +43,103 @@
 
   <div class="banner container">
     <div>
-      <h2>New Collection</h2>
-      <h3>Spring/Summer 2016</h3>
+      <p class="banner__sub-heading">New Collection</p>
+      <h2 class="banner__heading">Spring/Summer 2016</h2>
     </div>
     <img src="images/banner-girl.png" alt="banner model">
   </div>
-  <div id="about">
+  
+  <div id="about" class="container">
     <h2>Hand-Crafted Styles</h2>
     <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
-    <div id="shop">
-    <ul>
+  </div>
+  
+  <div id="shop">
+    <ul class="container">
       <div class="category-group">
-        <li class="category-group__item mens-category width-50 width-sm-100">Men's</li>
-        <li class="category-group__item trends-category width-25 width-sm-50">Trends</li>
-        <li class="category-group__item glasses-category width-25 width-sm-50">Glasses</li>
+        <li class="category-group__item mens-category width-50 width-sm-100"><span class="category-group__item-title">Men's</span></li>
+        <li class="category-group__item trends-category width-25 width-sm-50"><span class="category-group__item-title">Trends</span></li>
+        <li class="category-group__item glasses-category width-25 width-sm-50"><span class="category-group__item-title">Glasses</span></li>
       </div>
       <div class="category-group">
-        <li class="category-group__item sale-category width-25 width-sm-50">Sale</li>
-        <li class="category-group__item bags-category width-25 width-sm-50">Bags</li>
-        <li class="category-group__item womens-category width-50 width-sm-100">Women's</li>
+        <li class="category-group__item sale-category width-25 width-sm-50"><span class="category-group__item-title">Sale</span></li>
+        <li class="category-group__item bags-category width-25 width-sm-50"><span class="category-group__item-title">Bags</span></li>
+        <li class="category-group__item womens-category width-50 width-sm-100"><span class="category-group__item-title">Women's</span></li>
       </div>
     </ul>
+  </div>
+  
+
+    <div id="featured" class="container">
+		<h3>Most-Loved Products</h3>
+		<div class="main-carousel">
+		
+		  <div class="product carousel-cell">
+			<div class="product__image"><img src="images/checked-stretch-dress.jpg" alt="a checked stretch dress"></div>
+			<div class="product__category">Dresses</div>
+			<h4 class="product__title">Checked Stretch Dress</h4>
+      <span class="product__price">$129.00</span>
+      <div class="product__add"><button class="add-to-cart-btn" type="button">Add to Cart</button></div>
+		  </div>
+		  
+		  <div class="product carousel-cell">
+			<div class="product__image"><img src="images/blue-hipster-backpack.jpg" alt="blue backpack"></div>
+			<div class="product__category">Bags</div>
+			<h4 class="product__title">Blue Hipster Backpack</h4>
+      <span class="product__price">$69.00</span>
+      <div class="product__add"><button class="add-to-cart-btn" type="button">Add to Cart</button></div>
+		  </div>
+		  
+		  <div class="product carousel-cell">
+			<div class="product__image"><img src="images/demin-overall-shorts.jpg" alt="denim overall shorts"></div>
+			<div class="product__category">Denim</div>
+			<h4 class="product__title">Denim Overall Shorts</h4>
+			<span class="product__price">$89.00
+      <div class="product__add"><button class="add-to-cart-btn" type="button">Add to Cart</button></div>
+		  </div>
+		  
+		  <div class="product carousel-cell">
+			<div class="product__image"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress"></div>
+			<div class="product__category">Dresses</div>
+			<h4 class="product__title">Pink Dotted Dress</h4>
+      <span class="product__price">$99.00</span>
+      
+		</div>
+		
+		</div>
     </div>
-  </div>
-  <div id="featured" class="container">
-    <h3>Most-Loved Products</h3>
-    <ul>
-      <li><img src="images/checked-stretch-dress.jpg" alt="a checked stretch dress"><br>Dresses<br>Checked Stretch Dress<br>$129.00</li>
-      <li><img src="images/blue-hipster-backpack.jpg" alt="blue backpack"><br>Bags<br>Blue Hipster Backpack<br>$69.00</li>
-      <li><img src="images/demin-overall-shorts.jpg" alt="denim overall shorts"><br>Denim<br>Denim Overall Shorts<br>$89.00</li>
-      <li><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress"><br>Dresses<br>Pink Dotted Dress<br>$99.00</li>
-    </ul>
-  </div>
 
-  <div id="updates">
-    <div>
-    <h2><i>Sign-up</i> for Updates</h2>
-    <p>Stay updated on our latest product releases, be first to find out more about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-      <form>
-      <input type="email" name="email" placeholder="Your Email" />
-      <button button type="submit" style="position: absolute;right: 0;margin-top: -34px;" type="submit" id="submitbutton">Subscribe</button>
-    </form>
-  </div>
-
-</div>
+	<div id="updates">
+		<div class="container">
+			<h2><i>Sign-up</i> for Updates</h2>
+			<p>Stay updated on our latest product releases, be first to find out more about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+			  <form class="signup-form">
+				<div class="signup-form__inner">
+					<input type="email" name="email" placeholder="Your Email" />
+					<button type="submit" class="submit-button">Subscribe</button>
+				</div>
+			  </form>
+		 </div>
+	</div>
 
   <footer>
-    <div class="contact container">
+    
+	<div class="contact container width-50 width-sm-100">
       <p>© 2016 Aloha Apparel Co.<br>Powered by HTML and CSS.</p>
       <p>604-604-6040. info@alohaapparel.com</p>
       <p>1490 W Broadway<br>Vancouver, BC, Canada</p> 
     </div>
 
-    <div class="social, container">
-      <p><a href="http://www.facebook.com"><img src="facebook_icon.png" alt="Facebook icon">Facebook</a></p>
-      <p><a href="http://www.twitter.com"><img src="twitter_icon.png" alt="Twitter icon">Twitter</a></p>
-      <p><a href="http://www.instagram.com"><img src="instagram_icon.png" alt="Instagram icon">Instagram</a></p>
-      <p><a href="http://www.pinterest.com"><img src="pinterest_icon.png" alt="Pinterest icon">Pinterest</a></p>
-      <p><a href="http://plus.google.com"><img src="google+_icon.png" alt="Google+ icon">Google+</a></p>
+    <div class="social container width-50 width-sm-100">
+      <p><a href="http://www.facebook.com"><i class="fab fa-facebook" alt="Facebook icon"></i></a></p>
+      <p><a href="http://www.twitter.com"><i class="fab fa-twitter" alt="Twitter icon"></i></a></p>
+      <p><a href="http://www.instagram.com"><i class="fab fa-instagram" alt="Instagram icon"></i></a></p>
+      <p><a href="http://www.pinterest.com"><i class="fab fa-pinterest" alt="Pinterest icon"></i></a></p>
+      <p><a href="http://plus.google.com"><i class="fab fa-google-plus-square" alt="Google Plus icon"></i></a></p>
     </div>
+	
   </footer>
+  
 </div>
   <script src="js/jquery-3.3.1.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

@@ -94,18 +94,45 @@
 	font-style: italic;
 }
 
+.container {
+	max-width: 1240px;
+	margin: auto
+}
+
+p, ul, li, span, input {
+    font-family: Raleway;
+}
+
 p {
-    font-size: 14;
+    font-size: 14px;
   }
 
 header {
 	font-family: "Raleway";
 }
 
-.top {
+header .header-top {
+    padding: 20px 0px;
 	display: flex;
 	justify-content: space-between;
 }
+
+header .header-bottom {
+    padding: 15px 0px;
+    border-top: 1px solid #ddd;
+}
+
+header .header-top, header .header-bottom {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {font-size: 40px}
+h2 {font-size: 30px}
+h3 {font-size: 24px}
+h4 {font-size: 20px}
+h5 {font-size: 16px}
+
 
 .page-container {
 
@@ -145,23 +172,22 @@ header img {
 	z-index: 1;
 }
 
-.banner h2 {
-	font-family: "Raleway";
-	width: 100%;
-}
-
-.banner h3 {
-	font-size: 40px;
-}
 
 .banner img {
 	height: 100%;
 	position: absolute;
 }
 
-#about {
-	min-height: 300px;
+.banner__sub-heading {
+    text-transform: uppercase;
+    font-size: 20px;
 }
+
+.banner__heading {
+    font-size: 60px;
+	font-family: "Playfair Display"
+}
+
 
 #about h2 {
 	margin: 40px 0 20px;
@@ -176,6 +202,14 @@ header img {
 
 #shop ul {
 	font-family: "Raleway";
+}
+
+.product__title {
+    margin-bottom: 15px;
+}
+
+.product__category {
+	margin-bottom: 15px
 }
 
 /* #shop li {
@@ -206,21 +240,33 @@ header img {
 	text-shadow: black 0px 1px 1px;
 	border: 3px solid;
 	box-sizing: border-box;
+	position: relative;
 }
+
+.category-group__item-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    transform: translateY(-50%) translateX(-50%);
+    text-transform: uppercase;
+}
+
+
 .category-group {
 	position: relative;
 	font-size: 0px;
+	display: flex;
 }
 
+
 .width-25 {
-	width: 25%;
-	display: inline-block;
+	flex-basis: 25%;
 	font-size: 18px;
 }
 
 .width-50 {
-	width: 50%;
-	display: inline-block;
+	flex-basis: 50%;
 	font-size: 18px;
 }
 
@@ -252,6 +298,31 @@ header img {
 	border-right: 0;
 }
 
+form.signup-form {
+    width: auto;
+    display: inline-flex;
+}
+
+.signup-form__inner {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.signup-form__inner input[type=email] {
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.submit-button {
+    background-color: #e2574c;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px;
+}
+
 nav {
 	color: #e2574c;
 	display: block;
@@ -263,9 +334,13 @@ nav {
 
 nav ul {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	width: 80%;
     margin: 0 auto;
+}
+
+nav ul li {
+    margin-right: 30px;
 }
 
 footer {
@@ -287,9 +362,9 @@ h2 {
 	text-shadow: black 0px 1px 1px;
 }
 
-.contact {
-	display: flex;
-	justify-content: space-around;
+.contact p {
+	text-align:left;
+	margin-bottom: 15px;
 }
 
 .social {
@@ -299,7 +374,8 @@ h2 {
 }
 
 #featured {
-	margin: 70px 0 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 #featured ul {
@@ -328,16 +404,26 @@ h2 {
 	font-size: 30px;
 }
 
+add-to-cart-btn {
+    background: #333;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
 #updates p {
 	width: 60%;
 	margin: 0 auto;
 	padding: 20px 0 20px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 768px) {
    
-    .desktop-only {
-       display: block;
+	
+	.mobile-only {
+        display: none !important;
     }
     
     .withborder {
@@ -346,9 +432,13 @@ h2 {
 	
 }
 
-/* This only applies on > 480px devices */
+/* This only applies on > 767px devices */
 
 @media screen and (max-width: 767px) {
+	
+	 .desktop-only {
+       display: none !important;
+    }
 
 	.category-group__item {
 		height: 200px;
@@ -356,16 +446,22 @@ h2 {
 	}
 
 	.width-sm-100 {
-		width: 100%
+		 width: 100%;
 	}
 
 	.width-sm-50 {
 		width: 50%
 	}
+	
+	.category-group__item {
+		display: inline-block
+	}
+	
+	.category-group {
+		display: block;
+	}
 
-    .mobile-only {
-        display: none;
-    }
+
 }
 
 @media screen and (min-width: 1240px) {
