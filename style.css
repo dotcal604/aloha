@@ -157,7 +157,7 @@ header img {
 }
 
 .banner {
-    background: url("images/flower-bkgd.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.3)),url("images/flower-bkgd.jpg");
 	text-align: center;
 	height: 400px;
 	display: flex;
