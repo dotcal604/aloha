@@ -157,7 +157,7 @@ header img {
 }
 
 .banner {
-    background: url("images/flower-bkgd.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.3)),url("images/flower-bkgd.jpg");
 	text-align: center;
 	height: 400px;
 	display: flex;
@@ -357,7 +357,7 @@ h3 {
 	text-shadow: black 0px 1px 1px;
 }
 
-h2 {
+h1, h2 {
 	font-family: "Playfair Display";
 	text-shadow: black 0px 1px 1px;
 }
